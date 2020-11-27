@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :list_id %>
-    <%= form.text_field :list_id %>
+    <%= form.select(:list_id, @lists.collect { |l| [l.name, l.id] }) %>
   </div>
 
   <div class="actions">

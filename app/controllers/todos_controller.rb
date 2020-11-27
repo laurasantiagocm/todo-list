@@ -15,10 +15,12 @@ class TodosController < ApplicationController
   # GET /todos/new
   def new
     @todo = Todo.new
+    @lists = List.all
   end
 
   # GET /todos/1/edit
   def edit
+    @lists = List.all
   end
 
   # POST /todos
