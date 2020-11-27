@@ -5,5 +5,9 @@
   <%= @list.name %>
 </p>
 
+<% @list.todos.each do |todo| %>
+  <%= todo.name %> - <%= todo.completed %> <%= link_to 'Editar', edit_todo_path(todo) %> <br>
+<% end %>
+
 <%= link_to 'Edit', edit_list_path(@list) %> |
 <%= link_to 'Back', lists_path %>
