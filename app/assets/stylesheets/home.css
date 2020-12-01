@@ -1,0 +1,11 @@
+#centered {
+  text-align: center;
+}
+
+#centered-table {
+  margin: auto;
+}
+
+#pending-todos {
+  margin-top: 2%;
+}
